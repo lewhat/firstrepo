@@ -76,11 +76,11 @@ div.searchbox img {
 	border-radius: 5px;
 	display: block;
 	}
-.searchbox input: focus {
+.searchbox input:focus {
 	border-color: #f5f5f5;
 }
 div.buttons {
-	text-align: crnter;
+	text-align: center;
 	padding-left: 0;
 	text-align: center;
 }
@@ -100,7 +100,7 @@ div.buttons button {
 div.buttons div:hover {
 	background-color: #f8f8f8;
 	border:1px solid #c6c6c6;
-	box-shadow: 0 1px 1px rgba(o, o, o.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	color: #333;
 	cursor: default;
 }
@@ -143,4 +143,20 @@ ul.right li a{
 	margin:2px 10px 0;
 	letter-spacing: 0.1px;
 	font-size: 18px;
+}
+@media (max-width: 800px) {
+	.searchbox input, .searchbox img {
+		width: 50%;
+	}
+}
+@media (max-width: 525px) {
+	.left li:nth-child(2),
+	.right li:nth-child(2) {
+		display:none;
+	} 
+}
+@media ( max-width: 450px) {
+	.share {
+		display:none;
+	}
 }
